@@ -1156,3 +1156,9 @@ footer {
 	text-transform: uppercase;
 	color: #000000;
 }
+@media (max-width: 1230px) {}
+@media (max-width: 990px) {}
+@media (max-width: 770px) {}
+@media (max-width: 575px) { }
+
+
