@@ -4,27 +4,33 @@
 		<title>Blog</title>
 		<meta charset="utf8">
 		<link rel="stylesheet" href="css/main.css">
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Serif:700i&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
 	<header>
-		<div class="menu">
-			<div class="container__menu">
+        <div class="menu">
+			<div class="container container__menu">
 				<div class="panel__menu">
 					<div class="menu__logo">
-						<div class="logo__img"><img src="images/logo.png" alt="" class="logo"></div>
+						<a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 					</div>
 					<div class="menu__nav">
-						<div class="nav">
-							<a class="nav__link nav__link_active" href="home.html"><b>Home</b></a>
-							<a class="nav__link" href="about.html"><b>About</b></a>
-							<a class="nav__link" href="portfolio.html"><b>Portfolio</b></a>
-							<a class="nav__link" href="blog.html"><b>Blog</b></a>
-							<a class="nav__link" href="contact.html"><b>Contact</b></a>
-							<a class="nav__link" href="#"><i class="fas fa-search"></i></a>
-						</div>
+						<ul class="nav" id="menu">
+							<li><a class="nav__link active" href="home.html">Home</a></li>
+							<li><a class="nav__link" href="about.html">About</a></li>
+							<li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+							<li><a class="nav__link" href="blog.html">Blog</a></li>
+							<li><a class="nav__link" href="contact.html">Contact</a></li>
+							<!-- <input class="search__link" type="text"> -->
+							<li><a class="nav__link" href="#"><i class="fas fa-search"></i></a></li>
+						</ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -33,26 +39,27 @@
 	<main>
 		<div class="inner">
 			<div class="container">
-				<div class="head">
-					<div class="head__photo">
-						<div class="head__img">
-							<img src="images/contact/1.jpg" alt="" class="">
-						</div>
-						<div class="info-head">
-							<div class="head__txt">
-								<div class="head__overhead">Get in Touch</div>
-								<div class="head__subtitle">Contact us Today</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
+                <div class="head__img">
+                    <!-- <img src="images/contact/1.jpg" alt="" class=""> -->
+
+                    <div class="info-head">
+                        <div class="head__txt">
+                            <div class="head__overhead">Get in Touch</div>
+                            <div class="head__subtitle">Contact us Today</div>
+                        </div>
+                    </div>
+                </div>
+
 			</div>
 		</div>
-		<div class="contact">
-			<div class="container">
+		<div class="container">
+			<div class="contact">
+                <h2 class="contact__suptitle">office info</h2>
 				<div class="contact__flex">
+
 					<div class="office__info">
-						<h2 class="contact__suptitle">office info</h2>
+
 						<div class="info_txt">People Behind the Success of our Company</div>
 						<div class="office__hours"><b>Office Hours:</b>  Mon-Friday 8am - 10pm</div>
 						<div class="adress"><b>Address:</b> Igbalangao, Bugasong, Antique</div>
@@ -77,10 +84,7 @@
 
 		<div class="section">
 			<div class="container">
-				<div class="map">
-				<script></script>
-				<iframe src="" width="1600" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
+				<div class="map"></div>
 			</div>
 		</div>
 	<section class="section">
@@ -95,33 +99,36 @@
 				<div class="card__item">
 					<div class="card__inner">
 						<div class="card__img">
-							<img src="images/contact/2.jpg" alt="">
+							<img src="images/contact/2.jpg" alt="" class="card-img">
 						</div>
 						<div class="card__contact">
 							<div class="card__name">Who We Are</div>
 
 							<div class="card__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. </div>
 						</div>
+                        <div class="overlay"></div>
 					</div>
 					<div class="card__inner">
 						<div class="card__img">
-							<img src="images/contact/3.jpg" alt="">
+							<img src="images/contact/3.jpg" alt="" class="card-img">
 						</div>
 						<div class="card__contact">
 							<div class="card__name">Our Vision</div>
 
 							<div class="card__title">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me. </div>
 						</div>
+                        <div class="overlay"></div>
 					</div>
 					<div class="card__inner">
 						<div class="card__img">
-							<img src="images/contact/4.jpg" alt="">
+							<img src="images/contact/4.jpg" alt="" class="card-img">
 						</div>
 						<div class="card__contact">
 							<div class="card__name">Our Mission</div>
 
 							<div class="card__title">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan. </div>
 						</div>
+                        <div class="overlay"></div>
 					</div>
 				</div>
 			</div>
@@ -174,5 +181,8 @@
 			</div>
 		</div>
 	</footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </html>

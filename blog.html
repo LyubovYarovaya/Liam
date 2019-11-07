@@ -4,26 +4,32 @@
 		<title>Blog</title>
 		<meta charset="utf8">
 		<link rel="stylesheet" href="css/main.css">
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
 	<header>
-		<div class="menu">
-			<div class="container__menu">
+        <div class="menu">
+			<div class="container container__menu">
 				<div class="panel__menu">
 					<div class="menu__logo">
-						<div class="logo__img"><img src="images/logo.png" alt="" class="logo"></div>
+						<a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 					</div>
 					<div class="menu__nav">
-						<div class="nav">
-							<a class="nav__link nav__link_active" href="home.html"><b>Home</b></a>
-							<a class="nav__link" href="about.html"><b>About</b></a>
-							<a class="nav__link" href="portfolio.html"><b>Portfolio</b></a>
-							<a class="nav__link" href="blog.html"><b>Blog</b></a>
-							<a class="nav__link" href="contact.html"><b>Contact</b></a>
-							<a class="nav__link" href="#"><i class="fas fa-search"></i></a>
-						</div>
+						<ul class="nav" id="menu">
+							<li><a class="nav__link active" href="home.html">Home</a></li>
+							<li><a class="nav__link" href="about.html">About</a></li>
+							<li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+							<li><a class="nav__link" href="blog.html">Blog</a></li>
+							<li><a class="nav__link" href="contact.html">Contact</a></li>
+							<!-- <input class="search__link" type="text"> -->
+							<li><a class="nav__link" href="#"><i class="fas fa-search"></i></a></li>
+						</ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -48,216 +54,234 @@
 			</div>
 		</div>
 
-		<div class="blog">
-			<div class="container">
-				<div class="blog__flex">
-					<div class="blog__article">
-						<div class="blog__box">
-							<div class="wordpress">
-								<a class="btn__wordpress" href="#"><b>wordpress</b></a>
-							</div>
-							<div class="blog__subtitle"><a href="single_post.html">I am a Blog Post Title</a></div>
-							<div class="blog__autor">
-								<i class="fas fa-user"></i><b>  by Jenn Pereira</b></div>
-							<div class="blog__text">Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus...</div>
-							<div class="blog__data">
-								<div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
-								<div class="social__sing"></div>
-							</div>
 
-						</div>
-						<div class="blog__box">
-							<div class="blog__img">
-								<img src="images/blog/2.jpg" alt="" class="box">
-							</div>
-							<div class="blog__subtitle"><a href="single_post.html"></a>I am a Blog Post with an Awesome Image</div>
-							<div class="blog__autor">
-								<i class="fas fa-user"></i><b>  by Jenn Pereira</b>
-							</div>
-							<div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
-							<div class="blog__data">
-								<div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
-								<div class="social__sing"></div>
-							</div>
+        <div class="container blog">
+            <div class="row">
+                <div class="blog__flex grid__blog">
 
-						</div>
-						<div class="blog__hover">
-							<div class="blog__item">
-								<div class="blog__inner">
-									<div class="blog__img-hover">
-										<img src="images/blog/3.jpg" alt="" class="">
-									</div>
-									<div class="blog__txt">
-										<div class="blog__subtitle blog__subtitle_hover"><a href="single_post.html">I am a Blog Post Title</a></div>
-										<div class="blog__autor">
-											<i class="fas fa-user"></i><b>  by Jenn Pereira</b>
-										</div>
-										<div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris....</div>
-										<div class="blog__data">
-											<div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
-											<div class="social__sing"></div>
-										</div>
-									</div>
-								</div>
-							</div>
+                    <div class="blog__box grid-item__blog">
+                        <div class="wordpress">
+                            <a class="btn__wordpress" href="#"><b>wordpress</b></a>
+                        </div>
+                        <div class="blog__subtitle"><a href="single_post.html">I am a Blog Post Title</a></div>
+                        <div class="blog__autor">
+                            <i class="fas fa-user"></i><b>  by Jenn Pereira</b></div>
+                        <div class="blog__text">Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus...</div>
+                        <div class="blog__data">
+                            <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                            <div class="social__sing"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="blog__box grid-item__blog">
+                        <div class="blog__img">
+                            <img src="images/blog/2.jpg" alt="" class="box">
+                        </div>
+                        <div class="blog__subtitle"><a href="single_post.html"></a>I am a Blog Post with an Awesome Image</div>
+                        <div class="blog__autor">
+                            <i class="fas fa-user"></i><b>  by Jenn Pereira</b>
+                        </div>
+                        <div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
+                        <div class="blog__data">
+                            <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                            <div class="social__sing"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
 
-						</div>
+                    <div class="blog__box grid-item__blog">
+                        <div class="blog__img">
+                            <img src="images/blog/6.jpg" alt="" class="box">
+                        </div>
+                        <div class="blog__subtitle"><a href="single_post.html">I am a Blog Post with an Awesome Image</a></div>
+                        <div class="blog__autor">
+                            <i class="fas fa-user"></i><b>  by Jenn Pereira</b>
+                        </div>
+                        <div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
+                        <div class="blog__data">
+                            <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                            <div class="social__sing"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
 
-					</div>
-					<div class="blog__article">
-						<div class="blog__box">
-							<div class="blog__img">
-								<img src="images/blog/4.jpg" alt="" class="">
-							</div>
-							<div class="blog__subtitle"><a href="single_post.html">I am a Blog Post with an Awesome Image</a></div>
-							<div class="blog__autor">
-								<i class="fas fa-user"></i><b>  by Jenn Pereira</b></div>
-							<div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
-							<div class="blog__data">
-								<div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
-								<div class="social__sing"></div>
-							</div>
+                    <div class="blog__box grid-item__blog">
+                        <div class="blog__img">
+                            <img src="images/blog/4.jpg" alt="" class="box">
+                        </div>
+                        <div class="blog__subtitle"><a href="single_post.html">I am a Blog Post with an Awesome Image</a></div>
+                        <div class="blog__autor">
+                            <i class="fas fa-user"></i><b>  by Jenn Pereira</b></div>
+                        <div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
+                        <div class="blog__data">
+                            <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                            <div class="social__sing"></div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="blog__box grid-item__blog">
 
-						</div>
-						<div class="blog__box">
+                        <div class="blog__img">
+                            <img src="images/blog/5.jpg" alt="" class="box">
+                        </div>
 
-							<div class="blog__img">
-								<img src="images/blog/5.jpg" alt="" class="">
-							</div>
+                        <div class="blog__txt">
+                            <div class="blog__subtitle_hover"><a href="single_post.html">I am a Blog Post Title</a></div>
+                            <div class="blog__autor">
+                                <i class="fas fa-user"></i><b>  by Jenn Pereira</b>
+                            </div>
+                            <div class="blog__text">Proin semper suscipit magna, nec imperdiet vitae.</div>
+                            <div class="blog__data">
+                                <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                                <div class="social__sing"></div>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
 
-						</div>
-						<div class="blog__box">
-							<div class="blog__img">
-								<img src="images/blog/6.jpg" alt="" class="">
-							</div>
-							<div class="blog__subtitle"><a href="single_post.html">I am a Blog Post with an Awesome Image</a></div>
-							<div class="blog__autor">
-								<i class="fas fa-user"></i><b>  by Jenn Pereira</b>
-							</div>
-							<div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...</div>
-							<div class="blog__data">
-								<div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
-								<div class="social__sing"></div>
-							</div>
+                    <div class="aside__search grid-item__blog">
+                        <form class="seach">
+                            <input class="search__formin" autocomplete="off" placeholder="Search">
+                            <input type="image" src="images/blog/7.png" alt="search" class="find">
+                        </form>
+                    </div>
+                    <div class="aside__posts grid-item__blog">
+                        <div class="aside__head">Recent Posts</div>
+                        <a href="#">
+                            <div class="posts">
+                                <div class="posts__img">
+                                    <img src="images/blog/8.jpg" alt="" class="box">
+                                </div>
+                                <div class="posts__txt">
+                                    <div class="post__subtitle"><b>Lorem ipsum dolor sit amet, consec</b>
+                                    </div>
+                                    <div class="post__data">July 5, 2016</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="posts">
+                                <div class="posts__img">
+                                    <img src="images/blog/9.jpg" alt="" class="box">
+                                </div>
+                                <div class="posts__txt">
+                                    <div class="post__subtitle"><b>Ut wisi enim ad minim veniam, quis</b>
+                                    </div>
+                                    <div class="post__data">July 17, 2016</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="posts">
+                                <div class="posts__img">
+                                    <img src="images/blog/10.jpg" alt="" class="box">
+                                </div>
+                                <div class="posts__txt">
+                                    <div class="post__subtitle"><b>Aliquip ex ea commodo aliquam erat volutpat</b>
+                                    </div>
+                                    <div class="post__data">July 20, 2016</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="posts">
+                                <div class="posts__img">
+                                    <img src="images/blog/11.jpg" alt="" class="box">
+                                </div>
+                                <div class="posts__txt">
+                                    <div class="post__subtitle"><b>Ut wisi enim ad minim veniam, quis</b>
+                                    </div>
+                                    <div class="post__data">July 17, 2016</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tegs grid-item__blog">
+                        <div class="aside__head">Popular tags</div>
+                        <div class="tegs__flex">
+                            <div class="tegs__btn">
+                                <div class="tegs__btn">
+                                    <a href="#" class="tegs__link">construction</a>
+                                    <a href="#" class="tegs__link">engineering</a>
+                                    <a href="#" class="tegs__link">architecture</a>
+                                </div>
+                            </div>
+                            <div class="tegs__btn">
+                                <div class="t__btn">
+                                    <a href="#" class="tegs__link">structural design</a>
+                                    <a href="#" class="tegs__link">civil engineer</a>
+                                </div>
+                            </div>
+                            <div class="tegs__btn">
+                                <div class="t__btn">
+                                    <a href="#" class="tegs__link">industrial</a>
+                                    <a href="#" class="tegs__link">management</a>
+                                    <a href="#" class="tegs__link">mechanical</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instagram grid-item__blog">
+                        <div class="aside__head">Instagram</div>
+                        <div class="instagram__flex">
+                            <div class="instagram__photo">
+                                <div class="instagram__img">
+                                <img src="images/instagram/1.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/4.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/7.jpg" alt="" class=""></div>
+                            </div>
+                            <div class="instagram__photo">
+                                <div class="instagram__img">
+                                <img src="images/instagram/2.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/5.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/8.jpg" alt="" class=""></div>
+                            </div>
+                            <div class="instagram__photo">
+                                <div class="instagram__img">
+                                <img src="images/instagram/3.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/6.jpg" alt="" class=""></div>
+                                <div class="instagram__img">
+                                <img src="images/instagram/9.jpg" alt="" class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__hover grid-item__blog">
+                        <div class="blog__item">
+                            <div class="blog__inner">
+                                <div class="blog__img-hover">
+                                    <img src="images/blog/3.jpg" alt="" class="box">
+                                </div>
+                                <div class="blog__txt">
+                                    <div class="blog__subtitle blog__subtitle_hover"><a href="single_post.html">I am a Blog Post Title</a></div>
+                                    <div class="blog__autor">
+                                        <i class="fas fa-user"></i><b>  by Jenn Pereira</b>
+                                    </div>
+                                    <div class="blog__text">Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris....</div>
+                                    <div class="blog__data">
+                                        <div class="data__black"><i class="far fa-calendar"></i>  on July 19, 2016 </div>
+                                        <div class="social__sing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-						</div>
 
-					</div>
-					<div class="aside">
-						<div class="aside__search">
-							<form class="seach">
-								<input class="search__formin" autocomplete="off" placeholder="Search">
-								<input type="image" src="images/blog/7.png" alt="search" class="find">
-							</form>
-						</div>
-						<div class="aside__posts">
-							<div class="aside__head">Recent Posts</div>
-							<div class="posts">
-								<div class="posts__img">
-									<img src="images/blog/8.jpg" alt="" class="">
-								</div>
-								<div class="posts__txt">
-									<div class="post__subtitle"><b>Lorem ipsum dolor sit amet, consec</b>
-									</div>
-									<div class="post__data">July 5, 2016</div>
-								</div>
-							</div>
-							<div class="posts">
-								<div class="posts__img">
-									<img src="images/blog/9.jpg" alt="" class="">
-								</div>
-								<div class="posts__txt">
-									<div class="post__subtitle"><b>Ut wisi enim ad minim veniam, quis</b>
-									</div>
-									<div class="post__data">July 17, 2016</div>
-								</div>
-							</div>
-							<div class="posts">
-								<div class="posts__img">
-									<img src="images/blog/10.jpg" alt="" class="">
-								</div>
-								<div class="posts__txt">
-									<div class="post__subtitle"><b>Aliquip ex ea commodo aliquam erat volutpat</b>
-									</div>
-									<div class="post__data">July 20, 2016</div>
-								</div>
-							</div>
-							<div class="posts">
-								<div class="posts__img">
-									<img src="images/blog/11.jpg" alt="" class="">
-								</div>
-								<div class="posts__txt">
-									<div class="post__subtitle"><b>Ut wisi enim ad minim veniam, quis</b>
-									</div>
-									<div class="post__data">July 17, 2016</div>
-								</div>
-							</div>
-						</div>
-						<div class="tegs">
-							<div class="aside__head">Popular tags</div>
-							<div class="tegs__flex">
-								<div class="tegs__btn">
-									<div class="t__btn">
-										<button>construction</button>
-										<button>engineering</button>
-										<button>architecture</button>
-									</div>
-								</div>
-								<div class="tegs__btn">
-									<div class="t__btn">
-										<button>structural design</button>
-										<button>civil engineer</button>
-									</div>
-								</div>
-								<div class="tegs__btn">
-									<div class="t__btn">
-										<button>industrial</button>
-										<button>management</button>
-										<button>mechanical</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="instagram">
-							<div class="aside__head">Instagram</div>
-							<div class="instagram__flex">
-								<div class="instagram__photo">
-									<div class="instagram__img">
-									<img src="images/instagram/1.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/4.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/7.jpg" alt="" class=""></div>
-								</div>
-								<div class="instagram__photo">
-									<div class="instagram__img">
-									<img src="images/instagram/2.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/5.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/8.jpg" alt="" class=""></div>
-								</div>
-								<div class="instagram__photo">
-									<div class="instagram__img">
-									<img src="images/instagram/3.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/6.jpg" alt="" class=""></div>
-									<div class="instagram__img">
-									<img src="images/instagram/9.jpg" alt="" class=""></div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-				</div>
+                </div>
+                <div class="photo__btn">
+                    <div class="btn__txt">
+                        <a class="btn" href="#"><b>Load More</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<div class="photo__btn">
-					<div class="btn__txt">
-						<a class="btn" href="#"><b>Load More</b></a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</main>
 	</body>
 	<footer>
@@ -305,5 +329,8 @@
 			</div>
 		</div>
 	</footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </html>

@@ -10,21 +10,25 @@
 	</head>
 	<body>
 	<header>
-		<div class="menu">
-			<div class="container__menu">
+        <div class="menu">
+			<div class="container container__menu">
 				<div class="panel__menu">
 					<div class="menu__logo">
-						<div class="logo__img"><img src="images/logo.png" alt="" class="logo"></div>
+						<a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 					</div>
 					<div class="menu__nav">
-						<div class="nav">
-							<a class="nav__link nav__link_active" href="home.html" target="_self"><b>Home</b></a>
-							<a class="nav__link" href="about.html"><b>About</b></a>
-							<a class="nav__link" href="portfolio.html"><b>Portfolio</b></a>
-							<a class="nav__link" href="blog.html"><b>Blog</b></a>
-							<a class="nav__link" href="contact.html"><b>Contact</b></a>
-							<a class="nav__link" href="#"><i class="fas fa-search"></i></a>
-						</div>
+						<ul class="nav" id="menu">
+							<li><a class="nav__link active" href="home.html">Home</a></li>
+							<li><a class="nav__link" href="about.html">About</a></li>
+							<li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+							<li><a class="nav__link" href="blog.html">Blog</a></li>
+							<li><a class="nav__link" href="contact.html">Contact</a></li>
+							<!-- <input class="search__link" type="text"> -->
+							<li><a class="nav__link" href="#"><i class="fas fa-search"></i></a></li>
+						</ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -32,20 +36,11 @@
 	</header>
 	<main>
 		<div class="inner">
-			<div class="container">
-				<div class="head">
-					<div class="head__photo">
-						<div class="head__img">
-							<img src="images/about/1.jpg" alt="" class="">
-						</div>
-						<div class="info-head">
-							<div class="head__txt">
-								<div class="head__overhead">About The Agency</div>
-								<div class="head__subtitle">Welcome to Lian</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="about__img">
+                <div class="head__txt">
+                    <div class="head__overhead">About The Agency</div>
+                    <div class="head__subtitle">Welcome to Lian</div>
+                </div>
 			</div>
 		</div>
 	<div class="container">
@@ -80,34 +75,43 @@
 			<div class="card">
 				<div class="card__item">
 					<div class="card__inner">
-						<div class="card__img">
-							<img src="images/about/3.jpg" alt="">
-						</div>
-						<div class="card__text">
-							<div class="card__name">Lian Joy</div>
-							<div class="card__prof">CEO/Founder</div>
-							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
-						</div>
+                        <a href="#">
+    						<div class="card__img">
+    							<img src="images/about/3.jpg" alt="Lian Joy" class="card__photo">
+    						</div>
+    						<div class="card__text">
+    							<div class="card__name">Lian Joy</div>
+    							<div class="card__prof">CEO/Founder</div>
+    							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
+    						</div>
+                            <div class="overlay"></div>
+                        </a>
 					</div>
 					<div class="card__inner">
-						<div class="card__img">
-							<img src="images/about/4.jpg" alt="">
-						</div>
-						<div class="card__text">
-							<div class="card__name">Albert Thanh</div>
-							<div class="card__prof">CEO/Founder</div>
-							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
-						</div>
+						<a href="#">
+                            <div class="card__img">
+    							<img src="images/about/4.jpg" alt="Albert Thanh" class="card__photo">
+    						</div>
+    						<div class="card__text">
+    							<div class="card__name">Albert Thanh</div>
+    							<div class="card__prof">CEO/Founder</div>
+    							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
+    						</div>
+                            <div class="overlay"></div>
+                        </a>
 					</div>
 					<div class="card__inner">
-						<div class="card__img">
-							<img src="images/about/5.jpg" alt="">
-						</div>
-						<div class="card__text">
-							<div class="card__name">Jenn Pereira</div>
-							<div class="card__prof">CEO/Founder</div>
-							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
-						</div>
+                        <a href="#">
+    						<div class="card__img">
+    							<img src="images/about/5.jpg" alt="Jenn Pereira" class="card__photo">
+    						</div>
+    						<div class="card__text">
+    							<div class="card__name">Jenn Pereira</div>
+    							<div class="card__prof">CEO/Founder</div>
+    							<div class="card__title">Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci </div>
+    						</div>
+                            <div class="overlay"></div>
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -119,7 +123,7 @@
 		<div class="footer-logo">
 			<div class="container">
 				<div class="footer__logo">
-					<img src="images/logo.png" alt="" class="logofooter">
+					<a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 				</div>
 			</div>
 		</div>
@@ -160,5 +164,8 @@
 			</div>
 		</div>
 	</footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </html>

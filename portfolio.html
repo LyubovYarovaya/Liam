@@ -4,26 +4,31 @@
 		<title>Portfolio</title>
 		<meta charset="utf8">
 		<link rel="stylesheet" href="css/main.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
 	<header>
-		<div class="menu">
-			<div class="container__menu">
+        <div class="menu">
+			<div class="container container__menu">
 				<div class="panel__menu">
 					<div class="menu__logo">
-						<div class="logo__img"><img src="images/logo.png" alt="" class="logo"></div>
+						<a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 					</div>
 					<div class="menu__nav">
-						<div class="nav">
-							<a class="nav__link nav__link_active" href="home.html"><b>Home</b></a>
-							<a class="nav__link" href="about.html"><b>About</b></a>
-							<a class="nav__link" href="portfolio.html"><b>Portfolio</b></a>
-							<a class="nav__link" href="blog.html"><b>Blog</b></a>
-							<a class="nav__link" href="contact.html"><b>Contact</b></a>
-							<a class="nav__link" href="#"><i class="fas fa-search"></i></a>
-						</div>
+						<ul class="nav" id="menu">
+							<li><a class="nav__link active" href="home.html">Home</a></li>
+							<li><a class="nav__link" href="about.html">About</a></li>
+							<li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+							<li><a class="nav__link" href="blog.html">Blog</a></li>
+							<li><a class="nav__link" href="contact.html">Contact</a></li>
+							<!-- <input class="search__link" type="text"> -->
+							<li><a class="nav__link" href="#"><i class="fas fa-search"></i></a></li>
+						</ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -31,107 +36,86 @@
 	</header>
 	<main>
 		<div class="inner">
-			<div class="container">
-				<div class="head">
-					<div class="head__photo">
-						<div class="head__img">
-							<img src="images/portfolio/1.jpg" alt="" class="">
-						</div>
-						<div class="info-head">
-							<div class="head__txt">
-								<div class="head__overhead">About The Agency</div>
-								<div class="head__subtitle">Welcome to Lian</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="service">
-			<div class="container">
-				<div class="service_nav">
-					<div class="nav__link">
-						<a class="service__link" href="#"><b>All</b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>Logo </b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>Mobile App</b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>WordPress</b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>Web Design</b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>UI/IX</b></a>
-						<img src="images/slesh.png" alt="" class="slesh__img">
-						<a class="service__link" href="#"><b>Branding </b></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="photo">
-			<div class="container">
-				<div class="block__flex">
-					<div class="photo__flex">
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/1.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/2.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/3.jpg" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="photo__flex">
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/4.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/5.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/6.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/7.jpg" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="photo__flex">
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/8.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/9.jpg" alt=""></a>
-							</div>
-						</div>
-						<div class="photo__box">
-							<div class="box__img">
-								<a href="portfoliodetails.html" target="blank"><img src="images/block/10.jpg" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="head__photo">
+                <div class="portfolio__img">
 
+                </div>
+                <div class="info-head">
+                    <div class="head__txt">
+                        <div class="head__overhead">About The Agency</div>
+                        <div class="head__subtitle">Welcome to Lian</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="container container-service">
+            <div class="service_nav">
+                <a class="service__link" href="#">All</a>
+                <a class="service__link" href="#">Logo </a>
+                <a class="service__link" href="#">Mobile App</a>
+                <a class="service__link" href="#">WordPress</a>
+                <a class="service__link" href="#">Web Design</a>
+                <a class="service__link" href="#">UI/IX</a>
+                <a class="service__link" href="#">Branding </a>
+            </div>
+        </div>
+        <div class="container container-photo">
+			<div class="row">
+				<div class="grid">
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/1.jpg" alt="">
+							    <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/2.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/3.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/4.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/5.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/6.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/7.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/8.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/9.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+						<div class="grid-item gutter-sizer">
+							<a href="#" class="grid-link"><img src="images/block/10.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+						</div>
+				</div>
 				<div class="photo__btn">
 					<div class="btn__txt">
-						<a class="btn" href="#"><b>Load More</b></a>
+						<a class="btn" href="#">Load More</a>
 					</div>
 				</div>
 			</div>
@@ -142,7 +126,7 @@
 		<div class="footer-logo">
 			<div class="container">
 				<div class="footer__logo">
-					<img src="images/logo.png" alt="" class="logofooter">
+                    <a href="home.html" class="logo__img"><img src="images/logo.png" alt="Liam" class="logo"></a>
 				</div>
 			</div>
 		</div>
@@ -183,5 +167,8 @@
 			</div>
 		</div>
 	</footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
